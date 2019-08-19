@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    font-family: helvetica, sans-serif;
+}
+
+body {
+    padding: 30px;
+}
+
+label {
+    display: block;
+    margin: 20px 0px;
+}
+
+input[type=number] {
+    width: 40px;
+}
+
+.hint {
+    margin-top: 4px;
+    color: gray;
+}
+
+button {
+    padding: 10px 30px 10px 30px;
+    background-color:maroon;
+    color: white;
+}
+
+.error-message {
+    color: red;
+}
+
+.link::after{
+    content: ' »';
+    color: red;
+}

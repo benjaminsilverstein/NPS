@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>NPS Near You</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+       <header>
+          <h2>NPS in your area</h2>
+       </header>
+        <main>
+            <form>
+                <label for="state">
+                    <span>Find National Parks by state.</span>
+            <input type="text" name="state" id="js-search-state" placeholder="MA, CT, RI"required>
+            <p class="hint">(Use state abbreviations separated by commas)</p></label>
+            <label for="max-results">
+                <span>How many results should we show?</span>
+        <input type="number" name="max-results" id="js-max-results" max="50" required></label>
+            <button type="submit">Search</button>
+            </form>
+            <p id="js-error-message" class="error-message"></p>
+            <section class="results hide">
+
+            </section>
+            <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+            </script>
+        <script src="index.js" async defer></script>
+    </body>
+</html>
